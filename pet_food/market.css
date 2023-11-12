@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 850px;
+    height: 650px;
+    background-color: #fbffd7;
+}
+
+header{
+    padding-top: 20px;
+}
+
+header .logo img{
+    display: block;
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+}
+
+header nav{
+    display: flex;
+}
+
+header nav > div:nth-of-type(1) {
+    width: 50%;
+    height: 90px;
+    padding-left: 50px;
+    display: flex;
+    align-items: center;
+}
+
+header nav > div:nth-of-type(2) {
+    width: 50%;
+    height: 90px;
+    padding-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section > div:nth-of-type(1){
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section > div:nth-of-type(1) p , span{
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+section > div:nth-of-type(1) p:nth-of-type(1){
+    background-color: #eec0c2;
+    height: 30px;
+    display: grid;
+    place-items: center;
+}
+
+section > div:nth-of-type(2){
+    padding: 20px;
+    display: flex;
+}
+
+section .boxleft{
+    width: 50%;
+}
+
+section .boxleft > div{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+section .boxleft > div img{
+    width: 100px;
+    height: 100px;
+}
+
+section .boxleft > div p:nth-of-type(1){
+    width: 110px;
+}
+
+section .boxleft > div div{
+    width: 30px;
+    height: 30px;
+    background-color: #eec0c2;
+    display: grid;
+    place-items: center;
+}
+
+section .boxright{
+    width: 50%;
+}
+
+section .boxright > div{
+    margin-top: 20px;
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+section .boxright > div img{
+    width: 100px;
+    height: 100px;
+}
+
+section .boxright > div p:nth-of-type(1){
+    width: 110px;
+}
+
+section .boxright > div div{
+    width: 30px;
+    height: 30px;
+    background-color: #eec0c2;
+    display: grid;
+    place-items: center;
+}
+
+section .boxbuy{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #ffffffe0;
+    width: 400px;
+    height: 150px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 35px;
+    align-items: center;
+    display: none;
+}
+
+section .boxbuy button{
+    width: 100px;
+    height: 25px;
+}
+
+section .payment{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #eec0c2;
+    width: 150px;
+    height: 40px;
+    border-radius: 2px;
+    display: grid;
+    place-items: center;
+}
